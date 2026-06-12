@@ -3,7 +3,7 @@
 from pygame import Rect, Surface
 from pygame.font import Font
 import pygame.image
-from code.Const import COLOR_ORANGE, COLOR_WHITE, COLOR_YELLOW, MENU_OPTION, WIN_WIDTH
+from code.Const import C_ORANGE, C_WHITE, C_YELLOW, MENU_OPTION, WIN_WIDTH
 
 class Menu:
     def __init__(self, window):
@@ -17,13 +17,13 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Dumont", COLOR_ORANGE, ((WIN_WIDTH/2), 70))
+            self.menu_text(50, "Dumont", C_ORANGE, ((WIN_WIDTH/2), 70))
             
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(20, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH/2), 200 + 25 * i))
+                    self.menu_text(20, MENU_OPTION[i], C_YELLOW, ((WIN_WIDTH/2), 200 + 25 * i))
                 else:  
-                    self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH/2), 200 + 25 * i))
+                    self.menu_text(20, MENU_OPTION[i], C_WHITE, ((WIN_WIDTH/2), 200 + 25 * i))
                         
             #Check for all events
             for event in pygame.event.get():

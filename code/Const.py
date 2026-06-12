@@ -1,10 +1,11 @@
 # C
 import pygame
 
-
-COLOR_ORANGE = (255, 128, 0)
-COLOR_WHITE = (255, 255, 255)
-COLOR_YELLOW = (255, 255, 0)
+C_ORANGE = (255, 128, 0)
+C_WHITE = (255, 255, 255)
+C_YELLOW = (255, 255, 0)
+C_GREEN = (0, 128, 0)
+C_CYAN = (0, 128, 128)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -16,9 +17,9 @@ ENTITY_SPEED = {
   'Level1Bg4': 4,
   'Level1Bg5': 5,
   'Level1Bg6': 6,
-  'Player1': 2,
+  'Player1': 5,
   'Player1Shot': 2,
-  'Player2': 2,
+  'Player2': 5,
   'Player2Shot': 2,
   'Enemy1': 1,
   'Enemy1Shot': 5,
@@ -38,17 +39,53 @@ ENTITY_HEALTH = {
   'Player1Shot': 1,
   'Player2': 100,
   'Player2Shot': 1,
-  'Enemy1': 100,
+  'Enemy1': 1,
   'Enemy1Shot': 1,
-  'Enemy2': 150,
+  'Enemy2': 1,
   'Enemy2Shot': 1,
 }
 
+ENTITY_DAMAGE = {
+  'Level1Bg0': 0,
+  'Level1Bg1': 0,
+  'Level1Bg2': 0,
+  'Level1Bg3': 0,
+  'Level1Bg4': 0,
+  'Level1Bg5': 0,
+  'Level1Bg6': 0,
+  'Player1': 1,
+  'Player1Shot': 25,
+  'Player2': 1,
+  'Player2Shot': 25,
+  'Enemy1': 1,
+  'Enemy1Shot': 25,
+  'Enemy2': 1,
+  'Enemy2Shot': 25,
+}
+
+ENTITY_SCORE = {
+  'Level1Bg0': 0,
+  'Level1Bg1': 0,
+  'Level1Bg2': 0,
+  'Level1Bg3': 0,
+  'Level1Bg4': 0,
+  'Level1Bg5': 0,
+  'Level1Bg6': 0,
+  'Player1': 0,
+  'Player1Shot': 0,
+  'Player2': 0,
+  'Player2Shot': 0,
+  'Enemy1': 50,
+  'Enemy1Shot': 0,
+  'Enemy2': 50,
+  'Enemy2Shot': 0,
+}
+
 ENTITY_SHOT_DELAY = {
-    'Player1': 20,
-    'Player2': 15,
-    'Enemy1': 60,
-    'Enemy2': 70,
+    'Player1': 30,
+    'Player2': 30,
+    'Enemy1': 80,
+    'Enemy2': 90,
 }
 
 # M
